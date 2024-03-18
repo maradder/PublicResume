@@ -14,7 +14,8 @@ html{
 }
 body{
     font-family: inter, sans-serif;
-    background-color: #89d8f5;
+    /* background-color: #89d8f5; */
+    background-color: #68c5e7;
     color: black;
 }
 
@@ -22,10 +23,14 @@ body{
 img{
     width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     color:black;
+
 }
+
+
 .description{
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -62,7 +67,8 @@ a{
     margin: 0 auto;
     display: grid;
     padding: 5rem;
-    background: #68c5e7;
+    /* background: #68c5e7; */
+    background: #89d8f5;
     grid-template-columns: 1fr 1fr;
     gap: 4rem
 }
@@ -76,8 +82,25 @@ a{
 }
 .profile{
     grid-column: 1 / -1;
-    margin: 2rem;
+    margin: 2rem 0;
 }
+
+.profile_heading {
+    display: flex;
+    flex-direction: column;
+}
+.name_section {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile_img_name {
+    display: flex;
+    flex-direction: row;
+}
+
 .group-1,
 .group-2 {
     display: flex;
@@ -85,17 +108,19 @@ a{
     gap: 5rem;
 }
 .group-3 {
+    /* background-color: pink; */
     max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: row;
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    /* grid-column: 1 / -1; */
+    /* display: flex; */
+    /* flex-direction: row; */
     gap: 5rem;
 }
 .group-3 > div {
     flex: 1;
 }
+
 @media only screen and (max-width: 768px) {
     .profile {
         margin-bottom: 0;
@@ -133,14 +158,24 @@ a{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+.bio_section {
+    padding: 4px 0;
+}
+
 .downloadbtn{
     display: block;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    padding: 0.5rem 1rem;
     font: size 1.6rem;
     margin-top: 1rem;
+    border: 2px;
+    border-radius: 4px;
 }
 .downloadbtn:hover {
-    color:var(--primary-color);
+    background-color: #45454580;
+    color: white;
+    cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
     .profile_container {
@@ -184,10 +219,21 @@ a{
 }
 
 /* Contact */
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
 .contact_description {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    padding: 2px 0;
     font-size: 1.5rem;
     color: var(--text-color);
+}
+
+a {
+    /* text-decoration: underline  ; */
 }
 
 /* Socials */
